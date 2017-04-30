@@ -8,15 +8,16 @@ $(document).ready(function() {
     if (mobilecheck()) {
         $('html').addClass('mobile');
     } else {
-        var en = ['Home', 'Professions', 'Education', 'Current Position','Contact Me'];
+        //var en = ['Home', 'Professions', 'Education', 'Current Position','Contact Me'];
         var cn = ['首页', '技能', '教育培训', '供职', '联系我~'];
+        var en = ['首页', '技能', '教育培训', '供职', '联系我~'];
         var isCn = window.location.href.indexOf('cn.html') >= 0;
         $('.section').addClass('initing');
         $('#pagepiling').pagepiling({
             loopBottom: true,
             navigation: {
                 'position': 'left',
-                'tooltips': isCn ? en : cn
+                'tooltips': isCn ? cn : en
             },
             onLeave: function(index, nextIndex, direction) {
                 var $pages = $('.section');
