@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('html').addClass('mobile');
     } else {
         var en = ['Home', 'Professions', 'Education', 'Current Position','Contact Me'];
-        var cn = ['首页', '技能',  '技能', '教育培训', '供职', '联系我~'];
+        var cn = ['首页', '技能', '教育培训', '供职', '联系我~'];
         var isCn = window.location.href.indexOf('cn.html') >= 0;
         $('.section').addClass('initing');
         $('#pagepiling').pagepiling({
