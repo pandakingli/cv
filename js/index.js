@@ -16,7 +16,7 @@ $(document).ready(function() {
             loopBottom: true,
             navigation: {
                 'position': 'left',
-                'tooltips': isCn ? cn : en
+                'tooltips': isCn ? en : cn
             },
             onLeave: function(index, nextIndex, direction) {
                 var $pages = $('.section');
